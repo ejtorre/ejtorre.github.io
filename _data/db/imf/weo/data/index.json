@@ -1,0 +1,28 @@
+{
+	"version" : "2.0",
+	"class" : "collection",
+	"href": "https://www.imf.org/en/Publications/WEO/weo-database/2020/April",
+	"label": "World Economic Outlook",
+	"source" : "World Economic Outlook April 2020",
+	"updated" : "2020-11-23T12:30:02Z",
+	"link" : {
+		"item" : [
+			{
+				"class": "dataset",
+				"label": "724.NGDPRPPPPCPCH.V",
+				"href": "http://localhost:4000/assets/db/imf/weo/data/724.NGDPRPPPPCPCH.V.json",
+				"extension": {
+					"path": "/db/imf/weo/data/724.NGDPRPPPPCPCH.V.json"
+				}
+			},
+			{
+				"class": "dataset",
+				"label": "453.NGDP_RPCH.H",
+				"href": "http://localhost:4000/assets/db/imf/weo/data/453.NGDP_RPCH.H.json",
+				"extension": {
+					"path": "/db/imf/weo/data/453.NGDP_RPCH.H.json"
+				}
+			}
+		]
+	}
+}

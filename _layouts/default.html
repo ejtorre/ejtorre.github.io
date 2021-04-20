@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+	
+
+	{%- include head.html -%}
+
+	<body>
+
+		{%- include header.html -%}
+
+		<main class="gds-page-content">
+		
+			{{ content }}
+		
+		</main>
+
+		{%- include footer.html -%}
+
+		<div class="gds-top-background"></div>
+		<div class="gds-bottom-background"></div>
+
+	</body>
+
+</html>

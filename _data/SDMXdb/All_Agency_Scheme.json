@@ -1,0 +1,146 @@
+{
+	"meta": {
+		"id": "IREF621406",
+		"test": false,
+		"schema": "https://raw.githubusercontent.com/sdmx-twg/sdmx-json/develop/structure-message/tools/schemas/1.0/sdmx-json-structure-schema.json",
+		"prepared": "2020-12-15T19:55:45Z",
+		"contentLanguages": [
+			"en"
+		],
+		"sender": {
+			"id": "FusionRegistry"
+		}
+	},
+	"data": {
+		"agencySchemes": [
+			{
+				"name": "AGENCIES",
+				"names": {
+					"en": "AGENCIES"
+				},
+				"id": "AGENCIES",
+				"version": "1.0",
+				"agencyID": "GDS",
+				"isExternalReference": false,
+				"isFinal": false,
+				"isPartial": false,
+				"agencies": [
+					{
+						"name": "International Monetary Fund",
+						"names": {
+							"en": "International Monetary Fund"
+						},
+						"description": "International Monetary Fund",
+						"descriptions": {
+							"en": "International Monetary Fund"
+						},
+						"id": "IMF",
+						"links": [
+							{
+								"rel": "self",
+								"urn": "urn:sdmx:org.sdmx.infomodel.base.Agency=GDS.IMF",
+								"uri": "https://raw.githubusercontent.com/sdmx-twg/sdmx-json/develop/structure-message/tools/schemas/1.0/sdmx-json-structure-schema.json",
+								"type": "agency",
+								"hreflang": "en"
+							}
+						]
+					}
+				],
+				"links": [
+					{
+						"rel": "self",
+						"urn": "urn:sdmx:org.sdmx.infomodel.base.AgencyScheme=GDS:AGENCIES(1.0)",
+						"uri": "https://raw.githubusercontent.com/sdmx-twg/sdmx-json/develop/structure-message/tools/schemas/1.0/sdmx-json-structure-schema.json",
+						"type": "agencyscheme",
+						"hreflang": "en"
+					}
+				]
+			},
+			{
+				"name": "SDMX Agency Scheme",
+				"names": {
+					"en": "SDMX Agency Scheme"
+				},
+				"id": "AGENCIES",
+				"version": "1.0",
+				"agencyID": "SDMX",
+				"isExternalReference": false,
+				"isFinal": false,
+				"isPartial": false,
+				"agencies": [
+					{
+						"name": "SDMX",
+						"names": {
+							"en": "SDMX"
+						},
+						"description": "SDMX is an initiative to foster standards for the exchange of statistical information. It is sponsored by the Bank for International Settlements (BIS), the European Central Bank (ECB), the Statistical Office of the European Union (Eurostat), the International Monetary Fund (IMF), the Organization for Economic Co-Operation and Development (OECD), the United Nations (UN) and the World Bank.",
+						"descriptions": {
+							"en": "SDMX is an initiative to foster standards for the exchange of statistical information. It is sponsored by the Bank for International Settlements (BIS), the European Central Bank (ECB), the Statistical Office of the European Union (Eurostat), the International Monetary Fund (IMF), the Organization for Economic Co-Operation and Development (OECD), the United Nations (UN) and the World Bank."
+						},
+						"id": "SDMX",
+						"links": [
+							{
+								"rel": "self",
+								"urn": "urn:sdmx:org.sdmx.infomodel.base.Agency=SDMX",
+								"uri": "https://raw.githubusercontent.com/sdmx-twg/sdmx-json/develop/structure-message/tools/schemas/1.0/sdmx-json-structure-schema.json",
+								"type": "agency",
+								"hreflang": "en"
+							}
+						],
+						"contacts": [
+							{
+								"name": "SDMX Secretariat",
+								"names": {
+									"en": "SDMX Secretariat"
+								},
+								"department": "SDMX Secretariat",
+								"departments": {
+									"en": "SDMX Secretariat"
+								},
+								"role": "Single entry point for external inquiries",
+								"roles": {
+									"en": "Single entry point for external inquiries"
+								},
+								"uris": [
+									"http://sdmx.org"
+								],
+								"emails": [
+									"secretariat@sdmx.org"
+								]
+							}
+						]
+					},
+					{
+						"name": "Get Data Set",
+						"names": {
+							"en": "Get Data Set"
+						},
+						"description": "Get Data Set",
+						"descriptions": {
+							"en": "Get Data Set"
+						},
+						"id": "GDS",
+						"links": [
+							{
+								"rel": "self",
+								"urn": "urn:sdmx:org.sdmx.infomodel.base.Agency=GDS",
+								"uri": "https://raw.githubusercontent.com/sdmx-twg/sdmx-json/develop/structure-message/tools/schemas/1.0/sdmx-json-structure-schema.json",
+								"type": "agency",
+								"hreflang": "en"
+							}
+						]
+					}
+				],
+				"links": [
+					{
+						"rel": "self",
+						"urn": "urn:sdmx:org.sdmx.infomodel.base.AgencyScheme=SDMX:AGENCIES(1.0)",
+						"uri": "https://raw.githubusercontent.com/sdmx-twg/sdmx-json/develop/structure-message/tools/schemas/1.0/sdmx-json-structure-schema.json",
+						"type": "agencyscheme",
+						"hreflang": "en"
+					}
+				]
+			}
+		]
+	}
+}

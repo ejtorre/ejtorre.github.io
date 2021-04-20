@@ -1,0 +1,7 @@
+{
+	"id": "imf",
+	"name": "International Monetary Fund",
+	"description": "The International Monetary Fund, or IMF, promotes international financial stability and monetary cooperation. It also facilitates international trade, promotes employment and sustainable economic growth, and helps to reduce global poverty. The IMF is governed by and accountable to its 190 member countries.",
+	"type": "source",
+	"path": "/db/imf"
+}

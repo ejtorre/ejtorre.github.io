@@ -1,0 +1,433 @@
+{
+	"meta": {
+		"id": "XXXX",
+		"test": false,
+		"schema": "https://raw.githubusercontent.com/sdmx-twg/sdmx-json/develop/structure-message/tools/schemas/1.0/sdmx-json-structure-schema.json",
+		"prepared": "2020-11-29T18:13:43Z",
+		"contentLanguages": [
+			"en"
+		],
+		"sender": {
+			"id": "XXXX"
+		}
+	},
+	"data": {
+		"dataStructures": [
+			{
+				"name": "Demography",
+				"names": {
+					"en": "Demography"
+				},
+				"id": "DEMOGRAPHY",
+				"version": "1.0",
+				"agencyID": "UNICEF",
+				"isExternalReference": false,
+				"isFinal": false,
+				"dataStructureComponents": {
+					"attributeList": {
+						"id": "AttributeDescriptor",
+						"attributes": [
+							{
+								"assignmentStatus": "Conditional",
+								"attributeRelationship": {
+									"primaryMeasure": "OBS_VALUE"
+								},
+								"id": "OBS_STATUS",
+								"localRepresentation": {
+									"enumeration": "urn:sdmx:org.sdmx.infomodel.codelist.Codelist=UNICEF:CL_OBS_STATUS(1.0)"
+								},
+								"conceptIdentity": "urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=UNICEF:UNICEF_CONCEPTS(1.0).OBS_STATUS",
+								"links": [
+									{
+										"rel": "self",
+										"urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DEMOGRAPHY(1.0).OBS_STATUS",
+										"uri": "https://raw.githubusercontent.com/sdmx-twg/sdmx-json/develop/structure-message/tools/schemas/1.0/sdmx-json-structure-schema.json",
+										"type": "dataattribute",
+										"hreflang": "en"
+									}
+								]
+							},
+							{
+								"assignmentStatus": "Conditional",
+								"attributeRelationship": {
+									"primaryMeasure": "OBS_VALUE"
+								},
+								"id": "OBS_CONF",
+								"localRepresentation": {
+									"enumeration": "urn:sdmx:org.sdmx.infomodel.codelist.Codelist=SDMX:CL_CONF_STATUS(1.0)"
+								},
+								"conceptIdentity": "urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=UNICEF:UNICEF_CONCEPTS(1.0).OBS_CONF",
+								"links": [
+									{
+										"rel": "self",
+										"urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DEMOGRAPHY(1.0).OBS_CONF",
+										"uri": "https://raw.githubusercontent.com/sdmx-twg/sdmx-json/develop/structure-message/tools/schemas/1.0/sdmx-json-structure-schema.json",
+										"type": "dataattribute",
+										"hreflang": "en"
+									}
+								]
+							},
+							{
+								"assignmentStatus": "Conditional",
+								"attributeRelationship": {
+									"primaryMeasure": "OBS_VALUE"
+								},
+								"id": "DATA_SOURCE",
+								"conceptIdentity": "urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=UNICEF:UNICEF_CONCEPTS(1.0).DATA_SOURCE",
+								"links": [
+									{
+										"rel": "self",
+										"urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DEMOGRAPHY(1.0).DATA_SOURCE",
+										"uri": "https://raw.githubusercontent.com/sdmx-twg/sdmx-json/develop/structure-message/tools/schemas/1.0/sdmx-json-structure-schema.json",
+										"type": "dataattribute",
+										"hreflang": "en"
+									}
+								]
+							},
+							{
+								"assignmentStatus": "Conditional",
+								"attributeRelationship": {
+									"dimensions": [
+										"REF_AREA",
+										"RESIDENCE",
+										"SEX",
+										"AGE"
+									]
+								},
+								"id": "UNIT_MEASURE",
+								"localRepresentation": {
+									"enumeration": "urn:sdmx:org.sdmx.infomodel.codelist.Codelist=UNICEF:CL_UNIT_MEASURE(1.0)"
+								},
+								"conceptIdentity": "urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=UNICEF:UNICEF_CONCEPTS(1.0).UNIT_MEASURE",
+								"links": [
+									{
+										"rel": "self",
+										"urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DEMOGRAPHY(1.0).UNIT_MEASURE",
+										"uri": "https://raw.githubusercontent.com/sdmx-twg/sdmx-json/develop/structure-message/tools/schemas/1.0/sdmx-json-structure-schema.json",
+										"type": "dataattribute",
+										"hreflang": "en"
+									}
+								]
+							},
+							{
+								"assignmentStatus": "Conditional",
+								"attributeRelationship": {
+									"dimensions": [
+										"REF_AREA",
+										"RESIDENCE",
+										"SEX",
+										"AGE"
+									]
+								},
+								"id": "UNIT_MULTIPLIER",
+								"localRepresentation": {
+									"enumeration": "urn:sdmx:org.sdmx.infomodel.codelist.Codelist=SDMX:CL_UNIT_MULT(1.1)"
+								},
+								"conceptIdentity": "urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=UNICEF:UNICEF_CONCEPTS(1.0).UNIT_MULTIPLIER",
+								"links": [
+									{
+										"rel": "self",
+										"urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DEMOGRAPHY(1.0).UNIT_MULTIPLIER",
+										"uri": "https://raw.githubusercontent.com/sdmx-twg/sdmx-json/develop/structure-message/tools/schemas/1.0/sdmx-json-structure-schema.json",
+										"type": "dataattribute",
+										"hreflang": "en"
+									}
+								]
+							},
+							{
+								"assignmentStatus": "Conditional",
+								"attributeRelationship": {
+									"primaryMeasure": "OBS_VALUE"
+								},
+								"id": "COVERAGE_TIME",
+								"conceptIdentity": "urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=UNICEF:UNICEF_CONCEPTS(1.0).COVERAGE_TIME",
+								"links": [
+									{
+										"rel": "self",
+										"urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DEMOGRAPHY(1.0).COVERAGE_TIME",
+										"uri": "https://raw.githubusercontent.com/sdmx-twg/sdmx-json/develop/structure-message/tools/schemas/1.0/sdmx-json-structure-schema.json",
+										"type": "dataattribute",
+										"hreflang": "en"
+									}
+								]
+							},
+							{
+								"assignmentStatus": "Conditional",
+								"attributeRelationship": {
+									"primaryMeasure": "OBS_VALUE"
+								},
+								"id": "FREQ_COLL",
+								"localRepresentation": {
+									"enumeration": "urn:sdmx:org.sdmx.infomodel.codelist.Codelist=UNICEF:CL_FREQ_COLL(1.0)"
+								},
+								"conceptIdentity": "urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=UNICEF:UNICEF_CONCEPTS(1.0).FREQ_COLL",
+								"links": [
+									{
+										"rel": "self",
+										"urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DEMOGRAPHY(1.0).FREQ_COLL",
+										"uri": "https://raw.githubusercontent.com/sdmx-twg/sdmx-json/develop/structure-message/tools/schemas/1.0/sdmx-json-structure-schema.json",
+										"type": "dataattribute",
+										"hreflang": "en"
+									}
+								]
+							},
+							{
+								"assignmentStatus": "Conditional",
+								"attributeRelationship": {
+									"dimensions": [
+										"REF_AREA",
+										"RESIDENCE",
+										"SEX",
+										"AGE"
+									]
+								},
+								"id": "SOURCE_LINK",
+								"conceptIdentity": "urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=UNICEF:UNICEF_CONCEPTS(1.0).SOURCE_LINK",
+								"links": [
+									{
+										"rel": "self",
+										"urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DEMOGRAPHY(1.0).SOURCE_LINK",
+										"uri": "https://raw.githubusercontent.com/sdmx-twg/sdmx-json/develop/structure-message/tools/schemas/1.0/sdmx-json-structure-schema.json",
+										"type": "dataattribute",
+										"hreflang": "en"
+									}
+								]
+							},
+							{
+								"assignmentStatus": "Conditional",
+								"attributeRelationship": {
+									"primaryMeasure": "OBS_VALUE"
+								},
+								"id": "TIME_PERIOD_METHOD",
+								"conceptIdentity": "urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=UNICEF:UNICEF_CONCEPTS(1.0).TIME_PERIOD_METHOD",
+								"links": [
+									{
+										"rel": "self",
+										"urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DEMOGRAPHY(1.0).TIME_PERIOD_METHOD",
+										"uri": "https://raw.githubusercontent.com/sdmx-twg/sdmx-json/develop/structure-message/tools/schemas/1.0/sdmx-json-structure-schema.json",
+										"type": "dataattribute",
+										"hreflang": "en"
+									}
+								]
+							},
+							{
+								"assignmentStatus": "Conditional",
+								"attributeRelationship": {
+									"dimensions": [
+										"REF_AREA",
+										"RESIDENCE",
+										"SEX",
+										"AGE"
+									]
+								},
+								"id": "SERIES_FOOTNOTE",
+								"conceptIdentity": "urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=UNICEF:UNICEF_CONCEPTS(1.0).SERIES_FOOTNOTE",
+								"links": [
+									{
+										"rel": "self",
+										"urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DEMOGRAPHY(1.0).SERIES_FOOTNOTE",
+										"uri": "https://raw.githubusercontent.com/sdmx-twg/sdmx-json/develop/structure-message/tools/schemas/1.0/sdmx-json-structure-schema.json",
+										"type": "dataattribute",
+										"hreflang": "en"
+									}
+								]
+							},
+							{
+								"assignmentStatus": "Conditional",
+								"attributeRelationship": {
+									"primaryMeasure": "OBS_VALUE"
+								},
+								"id": "OBS_FOOTNOTE",
+								"conceptIdentity": "urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=UNICEF:UNICEF_CONCEPTS(1.0).OBS_FOOTNOTE",
+								"links": [
+									{
+										"rel": "self",
+										"urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DEMOGRAPHY(1.0).OBS_FOOTNOTE",
+										"uri": "https://raw.githubusercontent.com/sdmx-twg/sdmx-json/develop/structure-message/tools/schemas/1.0/sdmx-json-structure-schema.json",
+										"type": "dataattribute",
+										"hreflang": "en"
+									}
+								]
+							}
+						],
+						"links": [
+							{
+								"rel": "self",
+								"urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=UNICEF:DEMOGRAPHY(1.0).AttributeDescriptor",
+								"uri": "https://raw.githubusercontent.com/sdmx-twg/sdmx-json/develop/structure-message/tools/schemas/1.0/sdmx-json-structure-schema.json",
+								"type": "attributedescriptor",
+								"hreflang": "en"
+							}
+						]
+					},
+					"dimensionList": {
+						"id": "DimensionDescriptor",
+						"links": [
+							{
+								"rel": "self",
+								"urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=UNICEF:DEMOGRAPHY(1.0).DimensionDescriptor",
+								"uri": "https://raw.githubusercontent.com/sdmx-twg/sdmx-json/develop/structure-message/tools/schemas/1.0/sdmx-json-structure-schema.json",
+								"type": "dimensiondescriptor",
+								"hreflang": "en"
+							}
+						],
+						"dimensions": [
+							{
+								"position": 1,
+								"type": "Dimension",
+								"id": "REF_AREA",
+								"localRepresentation": {
+									"enumeration": "urn:sdmx:org.sdmx.infomodel.codelist.Codelist=UNICEF:CL_COUNTRY(1.0)"
+								},
+								"conceptIdentity": "urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=UNICEF:UNICEF_CONCEPTS(1.0).REF_AREA",
+								"links": [
+									{
+										"rel": "self",
+										"urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:DEMOGRAPHY(1.0).REF_AREA",
+										"uri": "https://raw.githubusercontent.com/sdmx-twg/sdmx-json/develop/structure-message/tools/schemas/1.0/sdmx-json-structure-schema.json",
+										"type": "dimension",
+										"hreflang": "en"
+									}
+								]
+							},
+							{
+								"position": 2,
+								"type": "Dimension",
+								"id": "INDICATOR",
+								"localRepresentation": {
+									"enumeration": "urn:sdmx:org.sdmx.infomodel.codelist.Codelist=UNICEF:CL_UNICEF_INDICATOR(1.0)"
+								},
+								"conceptIdentity": "urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=UNICEF:UNICEF_CONCEPTS(1.0).UNICEF_INDICATOR",
+								"links": [
+									{
+										"rel": "self",
+										"urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:DEMOGRAPHY(1.0).INDICATOR",
+										"uri": "https://raw.githubusercontent.com/sdmx-twg/sdmx-json/develop/structure-message/tools/schemas/1.0/sdmx-json-structure-schema.json",
+										"type": "dimension",
+										"hreflang": "en"
+									}
+								]
+							},
+							{
+								"position": 3,
+								"type": "Dimension",
+								"id": "RESIDENCE",
+								"localRepresentation": {
+									"enumeration": "urn:sdmx:org.sdmx.infomodel.codelist.Codelist=UNICEF:CL_RESIDENCE(1.0)"
+								},
+								"conceptIdentity": "urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=UNICEF:UNICEF_CONCEPTS(1.0).RESIDENCE",
+								"links": [
+									{
+										"rel": "self",
+										"urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:DEMOGRAPHY(1.0).RESIDENCE",
+										"uri": "https://raw.githubusercontent.com/sdmx-twg/sdmx-json/develop/structure-message/tools/schemas/1.0/sdmx-json-structure-schema.json",
+										"type": "dimension",
+										"hreflang": "en"
+									}
+								]
+							},
+							{
+								"position": 4,
+								"type": "Dimension",
+								"id": "SEX",
+								"localRepresentation": {
+									"enumeration": "urn:sdmx:org.sdmx.infomodel.codelist.Codelist=SDMX:CL_SEX(2.1)"
+								},
+								"conceptIdentity": "urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=UNICEF:UNICEF_CONCEPTS(1.0).SEX",
+								"links": [
+									{
+										"rel": "self",
+										"urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:DEMOGRAPHY(1.0).SEX",
+										"uri": "https://raw.githubusercontent.com/sdmx-twg/sdmx-json/develop/structure-message/tools/schemas/1.0/sdmx-json-structure-schema.json",
+										"type": "dimension",
+										"hreflang": "en"
+									}
+								]
+							},
+							{
+								"position": 5,
+								"type": "Dimension",
+								"id": "AGE",
+								"localRepresentation": {
+									"enumeration": "urn:sdmx:org.sdmx.infomodel.codelist.Codelist=UNICEF:CL_AGE(1.0)"
+								},
+								"conceptIdentity": "urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=UNICEF:UNICEF_CONCEPTS(1.0).AGE",
+								"links": [
+									{
+										"rel": "self",
+										"urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:DEMOGRAPHY(1.0).AGE",
+										"uri": "https://raw.githubusercontent.com/sdmx-twg/sdmx-json/develop/structure-message/tools/schemas/1.0/sdmx-json-structure-schema.json",
+										"type": "dimension",
+										"hreflang": "en"
+									}
+								]
+							}
+						],
+						"timeDimensions": [
+							{
+								"position": 6,
+								"type": "TimeDimension",
+								"id": "TIME_PERIOD",
+								"localRepresentation": {
+									"textFormat": {
+										"textType": "ObservationalTimePeriod"
+									}
+								},
+								"conceptIdentity": "urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=UNICEF:UNICEF_CONCEPTS(1.0).TIME_PERIOD",
+								"links": [
+									{
+										"rel": "self",
+										"urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=UNICEF:DEMOGRAPHY(1.0).TIME_PERIOD",
+										"uri": "https://raw.githubusercontent.com/sdmx-twg/sdmx-json/develop/structure-message/tools/schemas/1.0/sdmx-json-structure-schema.json",
+										"type": "timedimension",
+										"hreflang": "en"
+									}
+								]
+							}
+						]
+					},
+					"measureList": {
+						"id": "MeasureDescriptor",
+						"links": [
+							{
+								"rel": "self",
+								"urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=UNICEF:DEMOGRAPHY(1.0).MeasureDescriptor",
+								"uri": "https://raw.githubusercontent.com/sdmx-twg/sdmx-json/develop/structure-message/tools/schemas/1.0/sdmx-json-structure-schema.json",
+								"type": "measuredescriptor",
+								"hreflang": "en"
+							}
+						],
+						"primaryMeasure": {
+							"id": "OBS_VALUE",
+							"localRepresentation": {
+								"textFormat": {
+									"isSequence": false,
+									"textType": "Double"
+								}
+							},
+							"conceptIdentity": "urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=UNICEF:UNICEF_CONCEPTS(1.0).OBS_VALUE",
+							"links": [
+								{
+									"rel": "self",
+									"urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=UNICEF:DEMOGRAPHY(1.0).OBS_VALUE",
+									"uri": "https://raw.githubusercontent.com/sdmx-twg/sdmx-json/develop/structure-message/tools/schemas/1.0/sdmx-json-structure-schema.json",
+									"type": "primarymeasure",
+									"hreflang": "en"
+								}
+							]
+						}
+					}
+				},
+				"links": [
+					{
+						"rel": "self",
+						"urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=UNICEF:DEMOGRAPHY(1.0)",
+						"uri": "https://raw.githubusercontent.com/sdmx-twg/sdmx-json/develop/structure-message/tools/schemas/1.0/sdmx-json-structure-schema.json",
+						"type": "datastructure",
+						"hreflang": "en"
+					}
+				]
+			}
+		]
+	}
+}

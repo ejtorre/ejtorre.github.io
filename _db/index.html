@@ -1,0 +1,33 @@
+---
+layout: default
+title: Database
+---
+
+{%- include search-form.html -%}
+
+{% assign db_index = site.data.db.index %}
+{% assign db_obj = site.data.db %}
+{% assign db_type = site.data.objects.index.types.database %}
+{% assign db_icon = db_type.icon %}
+{% assign source_type = site.data.objects.index.types.source %}
+{% assign source_icon = source_type.icon %}
+
+<a href="{{ db_index.path }}">{{ db_icon }} {{db_index.name}} </a>
+
+<h1>{{db_index.name}}</h1>
+
+<p>{{db_index.description}}</p>
+
+<h2>Sources</h2>
+
+<ul>
+	{% for source in db_obj %}
+		{% if source[0] != 'index' %}
+			{% assign source_index = source[1].index %}
+			<li><a href="{{ source_index.path }}"> {{ source_icon }} {{ source_index.name }}</a>
+				</br> 
+				{{ source_index.description }}
+			</li>
+		{% endif %}
+	{% endfor %}
+</ul>

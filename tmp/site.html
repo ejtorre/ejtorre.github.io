@@ -1,0 +1,139 @@
+---
+layout: default
+permalink: /site/
+---
+
+<h1>Site Map</h1>
+
+<h2>Pages</h2>
+
+<ul class="browser-default">
+	{% for item in site.pages %}
+		<li>
+			url: <a href= "{{item.url}}">{{item.url}}</a>
+			<ul class="browser-default">
+				<li>Path: {{item.path}}</li>
+				<li>title: {{item.title}}</li>
+			</ul>
+		</li>
+	{% endfor %}
+</ul>
+
+<h2>Posts</h2>
+
+<ul class="browser-default">
+	{% for item in site.posts %}
+		<li>
+			url: <a href= "{{item.url}}">{{item.url}}</a>
+			<ul class="browser-default">
+				<li>Path: {{item.path}}</li>
+				<li>title: {{item.title}}</li>
+				<li>Categories: {{ item.categories | join: " · " }}</li>
+				<li>Tags: {{ item.tags | join: " · " }}</li>
+			</ul>
+		</li>
+	{% endfor %}
+</ul>
+
+<h2>Collections</h2>
+
+<ul class="browser-default">
+	{% for item in site.collections %}
+		<li>label: {{item.label}}
+			<ul class="browser-default">
+				<li>Directory: {{item.directory}}</li>
+				<li>Relative directory: {{item.relative_directory}}</li>
+				<li># Docs: {{item.docs | size}}</li>
+				<li>Docs:
+					<ul class="browser-default">
+						{% for doc in item.docs %}
+							<li>
+								url: <a href= "{{doc.url}}">{{doc.url}}</a>
+								<ul class="browser-default">
+									<li>Path: {{ doc.path }}</li>
+									<li>Relative path: {{ doc.relative_path }}</li>
+								</ul>
+							</li>
+						{% endfor %}
+					</ul>
+				</li>
+			</ul>
+		</li>
+	{% endfor %}
+</ul>
+
+<h2>Collection db</h2>
+
+<ul class="browser-default">
+	{% for item in site.db %}
+		<li>url: <a href= "{{item.url}}">{{item.url}}</a>
+			<ul class="browser-default">
+				<li>Path: {{ item.path }}</li>
+				<li>Relative path: {{ item.relative_path }}</li>
+				<li>Tags: {{ item.tags | join: " · " }}</li>
+				<li>Title: {{ item.title }}</li>
+				<li>Permalink: {{ item.permalink }}</li>
+			</ul>
+		</li>
+	{% endfor %}
+</ul>
+
+<h2>Data db</h2>
+
+<ul class="browser-default">
+	{% for item in site.data.db %}
+		{% assign source = item[1].index %}
+		<li><a href="/db/{{ source.id }}">{{ source.name }}</a>
+		</li>
+	{% endfor %}
+</ul>
+
+<h2>Data db > imf </h2>
+<ul class="browser-default">
+	{% for item in site.data.db['imf'] %}
+	{% assign dataset = item[1].index %}
+	{%if dataset %}
+		<li><a href="/db/imf/{{dataset.id}}">{{ dataset.name }}</a></li>
+	{% endif %}
+	{% endfor %}
+</ul>
+
+<h2>Data db > imf > weo > data </h2>
+<ul class="browser-default">
+	{% for item in site.data.db['imf']['weo'].data %}
+		{% assign ts = item[1] %}
+		{% assign ts_data_first = ts.data | first %}
+		{% assign ts_data_last = ts.data | last %}
+		<li><a href="/db/imf/weo/data/{{ts.dataId}}">{{ ts.title }}</a>
+			<ul class="browser-default">
+				<li>Tags: {{ ts.tags | join: " · " }}</li>
+				<li>Geography: {{ ts.geography }}</li>
+				<li>Concept: {{ ts.concept }}</li>
+				<li>Concept Notes: {{ ts.conceptNotes }}</li>
+				<li># Values: {{ ts.data | size }}</li>
+				<li>Ini: {{ ts_data_first.TimePeriod }}</li>
+				<li>End: {{ ts_data_last.TimePeriod }}</li>
+			</ul>
+		</li>
+	{% endfor %}
+</ul>
+
+
+<h2>Static files</h2>
+
+<ul class="browser-default">
+	{% for item in site.static_files %}
+		<li>
+			<a href= "{{item.path}}">{{item.path}}</a>
+			<ul class="browser-default">
+				<li>Path: {{item.path}}</li>
+				<li>title: {{item.name}}</li>
+			</ul>
+		</li>
+	{% endfor %}
+</ul>
+
+
+
+
+

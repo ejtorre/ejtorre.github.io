@@ -1,0 +1,7 @@
+{
+	"id": "db",
+	"name": "Database",
+	"description": "Nice description",
+	"type": "database",
+	"path": "/db"
+}

@@ -1,0 +1,28 @@
+---
+layout: default
+source_id: wb
+title: World Bank
+---
+
+{%- include search-form.html -%}
+
+{% assign source = site.data.db[page.source_id] %}
+
+<a href="/db"><i class="fas fa-database"></i> {{site.data.db.index.name}} </a> >
+<a href="/db/{{ source.index.id }}"><i class="fas fa-boxes"></i> {{ source.index.name }} </a>
+
+<h1>{{source.index.name}}</h1>
+<p>{{source.index.description}}</p>
+
+<h2>Datasets</h2>
+
+<ul>
+	{% for dataset in source %}
+		{% if dataset[0] != 'index' %}
+			<li><a href="/db/{{ source.index.id }}/{{dataset[1].index.id}}"><i class="fas fa-box"></i> {{ dataset[1].index.name }}</a>
+				</br> 
+				{{ dataset[1].index.description }}
+			</li>
+		{% endif %}
+	{% endfor %}
+</ul>

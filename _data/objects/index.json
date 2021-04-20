@@ -1,0 +1,22 @@
+{
+	"types": {
+		"database": {
+			"icon": "<i class='fas fa-database'></i>"
+		},
+		"source": {
+			"icon": "<i class='fas fa-boxes'></i>"
+		},
+		"dataset": {
+			"icon": "<i class='fas fa-box'></i>"
+		},
+		"attribute": {
+			"icon": "<i class='fas fa-tags'></i>"
+		},
+		"attribute-value": {
+			"icon": "<i class='fas fa-tag'></i>"
+		},
+		"time-series": {
+			"icon": "<i class='fas fa-chart-line'></i>"
+		}
+	}
+}

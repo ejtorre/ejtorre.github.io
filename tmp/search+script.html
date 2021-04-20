@@ -1,0 +1,25 @@
+---
+layout: page
+title: Catalog search
+permalink: /search
+---
+
+<div class="search-form">
+	<input type="text" placeholder="Type your query" class="search-box" id="id-search-box">
+</div>
+<ul class="search-results-list" id="id-search-results-container"></ul>
+
+<!-- Script pointing to search-script.js -->
+
+<script src="/assets/js/simple-jekyll-search.min.js" type="text/javascript"></script>
+
+<!-- Configuration -->
+
+<script>
+	SimpleJekyllSearch({
+		searchInput: document.getElementById('id-search-box'),
+		resultsContainer: document.getElementById('id-search-results-container'),
+		json: '/search.json',
+		searchResultTemplate: '<li><a class="search-results-link" href="{url}"><i class="far fa-calendar-alt"></i><span class="search-results-link-title">{title}<span></a></li>'
+	})
+</script>

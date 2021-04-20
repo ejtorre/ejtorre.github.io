@@ -1,0 +1,15 @@
+{
+	"version" : "2.0",
+	"class" : "dimension",
+	"label": "Reference area",
+	"category": {
+		"index": {
+			"724": 0,
+			"453": 1
+		},
+		"label": {
+			"724": "Sierra Leone",
+			"453": "Qatar"
+		}
+	}
+}

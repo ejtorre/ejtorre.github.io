@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<ul>
+	<li><strong>Geography: </strong>{{ page.geography }}</li>
+	<li><strong>Concept: </strong>{{ page.concept }}</li>
+	<li><strong>Concept Notes: </strong>{{ page.conceptNotes }}</li>
+	<li><strong>Time series specific notes: </strong>{{ page.dataSpecificNotes }}</li>
+	<li><strong>Units: </strong>{{ page.units }}</li>
+	<li><strong>Scale: </strong>{{ page.scale }}</li>
+	<li><strong>Last actual Date: </strong>{{ page.lastActualDataDate }}</li>
+</ul>
+
+<table>
+	<tr>
+		<th>Time period</th>
+		<th>Value</th>
+	</tr>
+	{%- for obs in page.data -%}
+		<tr>
+			<td>{{ obs.TimePeriod }}</td>
+			<td>{{ obs.Value }}</td>
+		</tr>
+	{%- endfor -%}
+</table>

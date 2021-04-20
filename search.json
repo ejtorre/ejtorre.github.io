@@ -1,0 +1,18 @@
+---
+---
+[
+{% for doc_hash in site.data.db.imf.weo %}
+{% assign doc = doc_hash[1] %}
+{% assign doc_name = doc_hash[0] %}
+{% if doc_name != 'index' %}
+{
+  "title"             : "{{ doc.title | strip_html | strip_newlines | escape }}", 
+  "conceptNotes"      : "{{ doc.conceptNotes | strip_html | strip_newlines | escape }}",
+  "dataSpecificNotes" : "{{ doc.dataSpecificNotes | strip_html | strip_newlines | escape }}",
+  "url"               : "{{ site.baseurl }}/db/imf/weo/{{ doc.id }}",
+  "tags"              : "{{ doc.tags | join: ', ' | strip_html | strip_newlines | escape }}",
+  "date"              : "{{ doc.date }}"
+},
+{% endif %} 
+{% endfor %}
+]
