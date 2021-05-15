@@ -291,7 +291,7 @@ const CompRoot = {
                 that.data = that.getData();
                 that.dataView = true;                
             }, function(){
-                that.signInOutMsg = this.msgs.notAuth;
+                that.signInOutMsg = that.msgs.notAuth;
             });
         },
         getFields() {
