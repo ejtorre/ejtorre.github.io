@@ -226,11 +226,13 @@ const CompRoot = {
         },
         setSigninStatus() {
             var user = this.GoogleAuth.currentUser.get();
-            this.userInfo = {
-                name: user.getBasicProfile().getName(),
-                img: user.getBasicProfile().getImageUrl(),
-                email: user.getBasicProfile().getEmail()
-            };
+            if (typeof user.getBasicProfile() != "undefined") {
+                this.userInfo = {
+                    name: user.getBasicProfile().getName(),
+                    img: user.getBasicProfile().getImageUrl(),
+                    email: user.getBasicProfile().getEmail()
+                };                
+            }            
             var isAuthorized = user.hasGrantedScopes(this.scope);
             if (isAuthorized) {
                 this.signInView = true;
