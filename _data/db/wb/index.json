@@ -1,7 +1,0 @@
-{
-	"id": "wb",
-	"name": "World Bank",
-	"description": "The World Bank Group works in every major area of development. We provide a wide array of financial products and technical assistance, and we help countries share and apply innovative knowledge and solutions to the challenges they face.",
-	"type": "source",
-	"path": "/db/wb"
-}

@@ -1,5 +1,0 @@
----
-layout: null
----
-
-{{ site.data.db.imf.weo.dimensions.dimension | jsonify }}

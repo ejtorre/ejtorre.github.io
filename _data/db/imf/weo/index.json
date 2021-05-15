@@ -1,8 +1,0 @@
-{
-	"id": "weo",
-	"name": "World Economic Outlook",
-	"description": "A Survey by the IMF staff usually published twice a year. It presents IMF staff economists' analyses of global economic developments during the near and medium term.",
-	"type": "dataset",
-	"lastUpdateDate": "2020-04-01",
-	"path": "/db/imf/weo"
-}
