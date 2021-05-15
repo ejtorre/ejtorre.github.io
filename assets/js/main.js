@@ -77,7 +77,12 @@ const CompDataHistory = {
 const CompRoot = {
     data() {
         return {
-            signInOutMsg: 'Por favor, incia sesión con tu cuenta de Google y, si no las hecho ya, permite el acceso a esta app para poder mostrate los datos.',
+            signInOutMsg: 'Por favor, inicia sesión con tu cuenta de Google y permite el acceso a esta app para poder mostrarte los datos.',
+            msgs: {
+                signIn: 'Por favor, inicia sesión con tu cuenta de Google y permite el acceso a esta app para poder mostrarte los datos.',
+                signInSucc: '¡¡¡Gracias!!! Has iniciado sesión y has autorizado el acceso de esta app. Ya puedes ver los datos.',
+                notAuth: 'Gracias por inciar sesión y autorizar los accesos pero el administrador no te conoce y no puedo mostrate los datos. Ponte en contacto con el administrador.'
+            },       
             signInLabel: 'Iniciar sesión/autorizar',
             signInView: true,
             signOutLabel: 'Retirar permisos',
@@ -238,14 +243,14 @@ const CompRoot = {
                 this.signInView = true;
                 this.signInLabel = "Terminar sesión"; 
                 this.signOutView = true;                
-                this.signInOutMsg = "¡¡¡Gracias!!! Has iniciado sesión y has autorizado el acceso de esta app. Ya puedes ver los datos."                
+                this.signInOutMsg = this.msgs.signInSucc;
                 this.makeApiCall();
             }
             else {
                 this.signInView = true;
                 this.signInLabel = "Iniciar sesión/autorizar";
                 this.signOutView = false;
-                this.signInOutMsg = 'Por favor, incia sesión con tu cuenta de Google y, si no las hecho ya, permite el acceso a esta app para poder mostrate los datos.';
+                this.signInOutMsg = this.msgs.signIn;
                 this.ssData = [];
                 this.data = [];
                 this.fields = {};
@@ -286,7 +291,7 @@ const CompRoot = {
                 that.data = that.getData();
                 that.dataView = true;                
             }, function(){
-                that.signInOutMsg = "Gracias por inciar sesión y autorizar los accesos pero el administrador no te conoce y no puedo mostrate los datos. Ponte en contacto con el administrador."
+                that.signInOutMsg = this.msgs.notAuth;
             });
         },
         getFields() {
