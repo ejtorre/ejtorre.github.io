@@ -81,7 +81,7 @@ const CompRoot = {
             msgs: {
                 signIn: 'Por favor, inicia sesión con tu cuenta de Google y permite el acceso a esta app para poder mostrarte los datos.',
                 signInSucc: '¡¡¡Gracias!!! Has iniciado sesión y has autorizado el acceso de esta app. Ya puedes ver los datos.',
-                notAuth: 'Gracias por inciar sesión y autorizar los accesos pero el administrador no te conoce y no puedo mostrate los datos. Ponte en contacto con el administrador.'
+                notAuth: 'Gracias por inciar sesión y autorizar los accesos pero el administrador no te conoce y no puedo mostrarte los datos. Ponte en contacto con el administrador.'
             },       
             signInLabel: 'Iniciar sesión/autorizar',
             signInView: true,
