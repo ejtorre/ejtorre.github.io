@@ -178,8 +178,6 @@ h4 {
 	margin: 32px;
 	border: 2px solid #000000;
 	box-shadow: 0 0 0 5px, 11px 13px 0 4px black;
-	position: sticky;
-	top: 64px;
 }
 
 .nav-list-header {
@@ -197,6 +195,13 @@ h4 {
 .nav-list > li > a:hover {
 	color: #bbbbbb;
 	background: #000000;
+}
+
+@media (min-width: 980px) {
+	.nav-list{
+		position: sticky;
+		top: 64px;
+	}
 }
 
 /* Hero */
@@ -340,7 +345,7 @@ h4 {
 		grid-template-areas:
 			"header    header"
 			"hero      hero"
-			"sidebar   content "
+			"sidebar   content"
 			"footer    footer";
 	}
 }
