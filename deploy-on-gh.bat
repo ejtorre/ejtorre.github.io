@@ -1,1 +1,0 @@
-mkdocs gh-deploy --config-file ../ejCVWeb/mkdocs.yml --remote-branch main
